@@ -1,5 +1,7 @@
 def openFile():
-    opened_file = open("C:\\Users\\piano\\Downloads\\HP5.txt","r")
+    #opened_file = open("C:\\Users\\piano\\Downloads\\HP5.txt","r")
+    opened_file = open("/Users/dale_nelson/Documents/Python/Lab07/HP5.txt","r",\
+        encoding="cp1252")
     return opened_file
 
 def wc():
@@ -17,7 +19,7 @@ def charCount():
         num_chars += len(line)
     return num_chars
 
-print(lc())
-print(wc())
-print(charCount())
+print("This text file has %s lines." % (lc()))
+print("This text file has %s words." % (wc()))
+print("This text file has %s characters." % (charCount()))
 
