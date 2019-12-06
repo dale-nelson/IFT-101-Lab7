@@ -1,12 +1,21 @@
-read_from_file = open("/Users/dale_nelson/Documents/Python/Lab07/\
-learning_python.txt","r")
-#print(read_from_file.read())
+def textReading():
+    read_file = open("C:\\Users\\piano\\OneDrive\\Documents\\Python\\Lab07\\learning_python.txt")
+    return read_file
 
-for line in read_from_file:
-    print(line.strip())
+def forLoopReading():
+    for line in textReading():
+        print(line.strip())
+    return
 
-lines = open("/Users/dale_nelson/Documents/Python/Lab07/\
-learning_python.txt","r")
-listOfLines = lines.readlines()
-for i in listOfLines:
-    print(i.strip())
+def listReading():
+    read_list = textReading().readlines()
+    return read_list
+
+def printEverything():
+    print(textReading().read())
+    forLoopReading()
+    test_list = listReading()
+    print(test_list[:2])
+    return
+
+printEverything()
