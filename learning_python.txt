@@ -1,0 +1,6 @@
+In Python, you can use the format function for strings
+In Python, you can properly print strings with the title function.
+In Python, you can use predicates, loops and iterations for simple programs and flow control.
+In Python, you can separate a loop and a predicate into separate functions.
+In Python, you can use function calls to make the code more readable and dynamic.
+In Python, you can use great coding techniques that organize code.
